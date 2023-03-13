@@ -17,4 +17,18 @@ void FindArray(string[] Array, string[] NewArray)
         }
     }
 }
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]}");
+    }
+    Console.Write(" ]");
+    Console.WriteLine();
+}
+
+Console.Clear();
+Console.Write($"[ Пять плюс пять равно 10 ] -> [ ");
+FindArray(Array, NewArray);
+PrintArray(NewArray);
 
