@@ -5,4 +5,16 @@
 string[] Array = new string[] { "Пять", "плюс", "Пять", "равно", "10" };
 string[] NewArray = new string[Array.Length];
 
+void FindArray(string[] Array, string[] NewArray)
+{
+    int count = 0;
+    for (int i = 0; i < Array.Length; i++)
+    {
+        if (Array[i].Length <= 3)
+        {
+            NewArray[count] = Array[i];
+            count++;
+        }
+    }
+}
 
